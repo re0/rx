@@ -9,7 +9,7 @@ var request = require("request");
 const render_app_url = "https://" + process.env.RENDER_EXTERNAL_HOSTNAME;
 
 app.get("/", (req, res) => {
-  res.send("hello world");
+  res.status(200).send("hello world");
 });
 
 app.get("/status", (req, res) => {
